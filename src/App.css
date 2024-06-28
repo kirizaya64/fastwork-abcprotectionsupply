@@ -1,0 +1,49 @@
+body {
+    /* background-color: #000; */
+    font-family: "Prompt", sans-serif;
+}
+
+/* Navbar Section */
+.menuNavbar {
+    @apply text-gray-800 hover:text-gray-600;
+}
+
+.menuNavbarMobile {
+    @apply block px-4 py-2 text-gray-800 hover:text-gray-600;
+}
+
+
+/* Dialog Design */
+.DialogBackdrop {
+    @apply fixed inset-0 hidden bg-gray-500 bg-opacity-75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in md:block;
+}
+
+.DialogPanel {
+    @apply flex w-full transform text-left text-base transition data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in md:my-8 md:max-w-2xl md:px-4 data-[closed]:md:translate-y-0 data-[closed]:md:scale-95 lg:max-w-4xl;
+}
+
+.buttonClose {
+    @apply absolute right-4 top-4 text-gray-400 hover:text-gray-500 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:ring-8 lg:top-8;
+}
+
+.buttonSale {
+    @apply mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-8 py-3 text-base font-medium text-white hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+}
+
+
+/* Home Page */
+.linkSocial {
+    @apply flex items-center px-4 py-2 bg-primary text-white font-semibold rounded-lg shadow-md hover:bg-primary/80 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-75;
+}
+
+/* About Page */
+
+
+/* Contact Page */
+.labelContact {
+    @apply block mb-2 text-sm font-medium text-gray-700;
+}
+
+.inputContact {
+    @apply w-full p-2 border border-gray-300 rounded mt-1;
+}
